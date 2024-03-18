@@ -1,0 +1,138 @@
+{% extends "header_footer.html" %}
+{% block content %}
+{% load static %}
+    <!-- chocolate section -->
+    {% if messages %}
+    {% for message in messages %}
+        {% if message.tags == 'success' %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert" style="text-align: center;">
+                <strong>Success!</strong> {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% elif message.tags == 'error' %}
+            <div class="alert alert-danger alert-dismissible fade show" role="alert" style="text-align: center;">
+                <strong>Error!</strong> {{ message }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endif %}
+    <section class="chocolate_section layout_padding">
+      <div class="container">
+        <div class="heading_container">
+          <h2>
+            Our Coffees
+          </h2>
+          <p>
+            you come here because you know what is best.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="chocolate_container">
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/coffe1.png' %}" alt=""> 
+            </div>
+            <div class="detail-box">
+              <h6>
+                Yummy <span>Black Coffee</span>
+              </h6>
+              <h5>
+                $5.0
+              </h5>
+              <a href="{% url 'purchase' name='Black Coffee'  %}">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/slider-img.jpg' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Yummy <span>Latte</span>
+              </h6>
+              <h5>
+                $7.0
+              </h5>
+              <a href={% url 'purchase' name='Latte'  %}>
+                BUY NOW
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/cold.jpeg' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Yummy <span>Cold Coffee</span>
+              </h6>
+              <h5>
+                $5.0
+              </h5>
+              <a href="{% url 'purchase' name='Cold Coffee'  %}">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/coffe1.png' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Yummy <span>Black Coffee</span>
+              </h6>
+              <h5>
+                $5.0
+              </h5>
+              <a href="{% url 'purchase' name='Black Coffee'  %}">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/slider-img.jpg' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Yummy <span>latte</span>
+              </h6>
+              <h5>
+                $7.0
+              </h5>
+              <a href="{% url 'purchase' name='Latte'  %}">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="img-box">
+              <img src="{% static 'images/cold.jpeg' %}" alt="">
+            </div>
+            <div class="detail-box">
+              <h6>
+                Yummy <span>Cold Coffee</span>
+              </h6>
+              <h5>
+                $5.0
+              </h5>
+              <a href="{% url 'purchase' name='Cold Coffee'  %}">
+                BUY NOW
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+{% endblock %}

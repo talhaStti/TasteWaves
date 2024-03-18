@@ -1,0 +1,93 @@
+{% extends "header_footer.html" %}
+{% block content %}
+{% load static %}
+
+    <!-- client section -->
+
+    <section class="client_section layout_padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <div class="img-box sub_img-box">
+              <img src="{% static 'images/coffee2.png' %}" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 px-0">
+            <div class="client_container">
+              <div class="heading_container">
+                <h2>
+                  Testimonial
+                </h2>
+              </div>
+              <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="{% static 'images/client-img.jpeg' %}" alt="">
+                      </div>
+                      <div class="detail-box">
+                        <h4>
+                          Satti
+                        </h4>
+                        <p>
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod fugit placeat quis, impedit harum incidunt dolores nemo amet dolor inventore delectus optio voluptatem itaque enim voluptas exercitationem quibusdam numquam nobis.
+                        </p>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="{% static 'images/client-img.jpeg' %}" alt=""> 
+                      </div>
+                      <div class="detail-box">
+                        <h4>
+                           Satti 
+                        </h4>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis perspiciatis voluptatum eius fugiat repellendus earum eveniet, tempora dolorem libero ex recusandae facilis laboriosam labore suscipit at nesciunt est, hic vitae iure quaerat officiis ab nostrum? Tempora, ratione inventore? Error exercitationem quas necessitatibus amet repellendus? Quibusdam totam placeat excepturi ex quam.
+                        </p>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="box">
+                      <div class="img-box">
+                        <img src="{% static 'images/client-img.jpeg' %}" alt="">
+                      </div>
+                      <div class="detail-box">
+                        <h4>
+                          Satti 
+                        </h4>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit sint eius doloribus et sed aperiam cum voluptates. Sed sunt, debitis mollitia qui quas earum fugit?
+                        </p>
+                        <i class="fa fa-quote-left" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel_btn-box">
+                  <a class="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end client section -->
+
+    
+{% endblock content %}
